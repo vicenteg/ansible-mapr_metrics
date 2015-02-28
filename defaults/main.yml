@@ -1,0 +1,10 @@
+---
+# defaults file for mapr-metrics
+proxy_env: { }
+
+mapr_metrics_enabled: True
+
+# username, password and host:port for the metrics database for use with configure.sh
+metrics_user: maprmetrics
+metrics_password: mapr
+metrics_host: "{{ groups['mysql'] | first }}"
