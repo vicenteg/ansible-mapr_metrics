@@ -30,7 +30,7 @@ Example Playbook
 ```
 ---
 - hosts: webserver:jobtracker
-  sudo: yes
+  become: yes
   roles:
     - mapr-metrics
 ```
